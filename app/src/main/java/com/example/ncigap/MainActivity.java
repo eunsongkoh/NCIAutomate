@@ -48,9 +48,7 @@ public class MainActivity extends AppCompatActivity {
         butSubmit.setOnClickListener(new View.OnClickListener() {
             @Override // overriding the onClick() method
             public void onClick(View view) {
-                System.out.println("ITS WORKING?");
                 addData();
-                System.out.println("ITS WORKING?");
                 progressBar.setVisibility(ProgressBar.VISIBLE);
             }
         });
@@ -68,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         you create an "Intent" to navigate to the SuccessActivity using the getApplicationContext()
         startActivity(intent) starts the SuccessActivity so it become visible to the user
         */
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://script.google.com/macros/s/AKfycbxkndUgq4XL6JLhLZw2HkyLb_m-k-_mw_S-YOFgx8ifkUDPtennx8PzcO8XKriJWb9idw/exec", new Response.Listener<String>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://script.google.com/macros/s/AKfycbzqw_LV-YQslUVDpNBqka5JekrWAbi7Snr2ySG4-T7Wu_Cz9CjFAxEKJaEKfjNItZzErQ/exec", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Intent intent = new Intent(getApplicationContext(), SuccessActivity.class);
