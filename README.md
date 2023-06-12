@@ -1,6 +1,4 @@
-NCI Automate
-
-Currently one of the two programs I have developed for the HR department. 
-
+Inspect DB
+1/2 Programs for HR
 - Android App to efficiently finish inspections 
 - Automatically updates a Google sheets database on input 
