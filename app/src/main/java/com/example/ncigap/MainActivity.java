@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         you create an "Intent" to navigate to the SuccessActivity using the getApplicationContext()
         startActivity(intent) starts the SuccessActivity so it become visible to the user
         */
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://script.google.com/macros/s/AKfycbzqw_LV-YQslUVDpNBqka5JekrWAbi7Snr2ySG4-T7Wu_Cz9CjFAxEKJaEKfjNItZzErQ/exec", new Response.Listener<String>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "LINK", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Intent intent = new Intent(getApplicationContext(), SuccessActivity.class);
